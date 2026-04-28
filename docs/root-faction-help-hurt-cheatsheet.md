@@ -136,7 +136,7 @@
 - Strip items off the table before Birdsong so the hoard skips its score trigger.
 - Liberate oppressed clearings (place any warrior there) to reset their scoring track for that clearing.
 - Spend a turn moving the Warlord pawn off its anchor — without him, mobs cannot Anointed-recruit chain.
-- Keep at least one warrior adjacent to every Stronghold so they cannot freely Befoul.
+- Contest rule of clearings where they want to Build — Strongholds need rule, and each one fuels free Birdsong recruits and crafting.
 
 ---
 
