@@ -7,145 +7,145 @@
 
 ### Marquise de Cat
 ##### Helping:
-- Leaving their wood network alone.
-- Ignoring recruiters, especially near contested clearings.
-- Letting them build without forcing tradeoffs.
-- Buying time for them to stabilize after early losses.
+- Letting their Keep clearing become a safe building hub — Field Hospitals heal everything they lose adjacent to it.
+- Trading items they craft (workshops are cheap VP and most-suit hand printing).
+- Leaving them only one front so all their warriors funnel cleanly.
+- Ignoring early sawmills — wood compounds across turns since unspent wood stays put.
 
 ##### Hurting:
-- Cut roads between sawmills and build sites.
-- Pick off exposed wood when it is cheap.
-- Pressure recruiters so their warrior count stays thin.
-- Force them to spend actions battling instead of building.
+- Sever wood-supply paths so a sawmill cannot reach an open building slot.
+- Force them onto a second front; their action economy folds when build/recruit/battle compete.
+- Take buildings off the board — every Marquise building destroyed is a public VP for the destroyer.
+- Keep at least one warrior next to the Keep clearing to break Field Hospitals' adjacency.
 
 ---
 
 ### Eyrie Dynasties
 ##### Helping:
-- Letting them keep easy recruit and move targets.
-- Leaving empty building slots open for roosts.
-- Avoiding their front line so the Decree stays easy.
-- Feeding them predictable battles.
+- Letting them craft persistent birds — Royal Claim and Lords of the Forest swing their late game hard.
+- Discarding into a deck full of suits already on their Decree.
+- Ignoring their leader choice; Despot, Charismatic, etc. each reward a different counter.
+- Letting them resolve a clean turn — the Decree only grows, so every quiet round compounds.
 
 ##### Hurting:
-- Block the exact clearings they need for Decree actions.
-- Remove roosts that give them card draw and scoring.
-- Make recruit, move, battle, or build actions impossible.
-- Do not give them free battles unless turmoil is unlikely.
+- Drop a warrior into the one clearing where their next forced Decree action becomes impossible — turmoil costs them VP equal to roosts.
+- Empty one suit out of their Decree by occupying every clearing of that suit they can reach.
+- Refuse battles in clearings where they have a single warrior — make them recruit before they can satisfy battle.
+- Time roost destruction for the turn before turmoil resolves so the VP penalty hits while the column is fat.
 
 ---
 
 ### Woodland Alliance
 ##### Helping:
-- Moving into sympathy carelessly and feeding supporters.
-- Attacking sympathy without a plan.
-- Letting them keep bases and officers.
-- Ignoring sympathy spread until it becomes expensive to cross the map.
+- Moving through sympathy without thinking — every move into a sympathetic clearing feeds a supporter.
+- Discarding cards into their hands via Outrage by attacking sympathy you cannot also remove.
+- Letting the supporter stack pass 5 cards — they get to start dumping into bases freely.
+- Ignoring their first base; the matching suit becomes a free Mobilize/Train pipeline.
 
 ##### Hurting:
-- Martial law their key clearings with 3+ warriors.
-- Remove bases when you can actually finish the job.
-- Keep card pressure on them, especially matching suits.
-- Avoid unnecessary sympathy outrage.
+- Park 3+ warriors in their key clearings — Martial Law freezes their right to place sympathy there.
+- Match the first base destruction with simultaneous officer removal so they cannot rebuild quickly.
+- Win battles in sympathetic clearings where they have no warriors so Outrage gives nothing.
+- Snipe their hand by removing the suited base before they Mobilize the cards into it.
 
 ---
 
 ### Vagabond
 ##### Helping:
-- Crafting items early without table agreement.
-- Letting them farm aid safely.
-- Ignoring ruins and quest tempo.
-- Leaving damaged hostile factions with easy warrior targets.
+- Going Hostile in trades — every Hostile relationship hands them a 2 VP per warrior killed.
+- Letting them sit at max items — torch, sword, and crossbow all want to be undamaged at the same time.
+- Crafting items they want into the supply for them to Aid you out of cheaply.
+- Pushing your own pieces next to the Vagabond — they can Strike anywhere they stand without moving.
 
 ##### Hurting:
-- Limit item crafting unless it clearly helps you more.
-- Hit the Vagabond before they become action-rich.
-- Guard ruins and key quest clearings when possible.
-- Force them to repair and waste tempo.
+- Damage their boots and bags first — once boots/torches go, exploration and quests stall hard.
+- Refuse to Aid; without Aid they have to Strike or Quest, both of which damage their items.
+- Camp their next ruin with a cheap warrior so they pay an extra move and forfeit the Explore VP.
+- Stay in Allied or Indifferent — VP from Hostile hits scale faster than you think.
 
 ---
 
 ### Riverfolk Company
 ##### Helping:
-- Buying too much, especially early.
-- Letting their trade posts sit safely.
-- Giving them funds without making them spend tempo defending.
-- Leaving the river uncontested.
+- Buying mercenaries early — every hire pays them and slides their price marker up later.
+- Letting one player be the sole customer; concentrated demand fixes their price ceiling for them.
+- Treating hand cards as something you'll just discard at end of turn — sell them instead, you're paying for nothing.
+- Forgetting their river-walking; they reach trade posts you didn't think were threatened.
 
 ##### Hurting:
-- Coordinate purchases so only one player feeds them when needed.
 - Destroy trade posts when their funds are high — Trade Disruption halves the funds box.
-- Keep prices high-pressure by refusing bad deals.
+- Coordinate a single-turn buyout so one player drains their goods, then the table starves them.
+- Keep prices high-pressure by refusing bad deals; their scoring needs an active market.
 - Hit on-map warriors so they can't defend trade posts — Riverfolk have no active recruit step.
 
 ---
 
 ### Lizard Cult
 ##### Helping:
-- Feeding them acolytes through bad attacks (defenders go to Acolytes, not supply).
-- Ignoring gardens in high-card-draw suits.
-- Letting them quietly stack gardens in one suit.
-- Spending cards in suits that make their Outcast useful.
+- Killing cult warriors in battle — defenders removed go straight to Acolytes, not supply.
+- Discarding the Hated Outcast suit; whatever you dump is exactly what they want next.
+- Leaving warriors unprotected in their Outcast suit — Sanctify converts a hostile warrior to a cult warrior.
+- Letting gardens cluster — the per-suit garden VP track scores more the deeper one suit goes.
 
 ##### Hurting:
-- Remove gardens before they snowball card draw and scoring.
-- Attack only when the acolyte cost is worth it.
-- Watch the Lost Souls pile and avoid gifting a perfect Outcast.
-- Keep them spread thin so conversions are less devastating.
+- Remove gardens immediately; their per-garden VP scaling is the snowball, not the warrior count.
+- Attack with overkill so your hits don't generate Acolytes — extra hits hit buildings, not the Acolyte pool.
+- Watch the Lost Souls pile to see what they will Sanctify next; deny those clearings or empty them of warriors.
+- Force them to crusade — they trade Acolytes per warrior placed, so make every recruit expensive.
 
 ---
 
 ### Underground Duchy
 ##### Helping:
-- Letting markets and citadels stay protected.
-- Ignoring early tunnel placement.
-- Allowing them to sway ministers without setbacks.
-- Giving them safe clearings matching their reveal cards.
+- Letting them place all three tunnels without contest — surface mobility scales with tunnel count.
+- Crafting their preferred suit cards instead of saving them for sway.
+- Treating ministers as one-time hires; they keep scoring every turn the minister stays alive.
+- Ignoring the Burrow — it's free recruit and a permanent safe clearing they always rule.
 
 ##### Hurting:
-- Destroy buildings to make ministers collapse.
-- Pressure tunnels and key clearings before their action engine grows.
-- Deny safe suited clearings for minister reveals.
-- Hit them before they have both board presence and minister economy.
+- Destroy buildings to force minister disgrace — losing a minister loses its passive every turn.
+- Battle in their tunnel clearings; tunnels are removable pieces and their re-place cost is steep.
+- Deny mouse/fox/rabbit clearings they need to sway, especially the Banker and Earl.
+- Pressure them before they reach mid-game — early Duchy is fragile, late Duchy is unkillable.
 
 ---
 
 ### Corvid Conspiracy
 ##### Helping:
-- Ignoring face-down plots.
-- Guessing plots randomly and feeding them cards.
-- Letting them keep multiple plots for big flips.
-- Leaving them unpoliced because they look weak.
+- Guessing plots when you don't need to — failed guesses hand them a card and they score 1 VP.
+- Stockpiling cards while a Snare sits in your path — Snare exhausts you for the turn the moment you enter.
+- Letting a Plot trio go uncontested; tricks and bluffs double their plot scoring.
+- Forgetting Extortion — every Extortion in a clearing you enter or start in costs you a card.
 
 ##### Hurting:
-- Remove plots through battle when possible.
-- Guess only when you have good information or low downside.
-- Keep their warrior count too low to safely plot.
-- Do not let bombs or extortions sit in high-value clearings.
+- Remove plots by battling into them — battle exposes and destroys without a guess penalty.
+- Force Exposure plays by camping clearings where they need plots to score; revealed plots are worth less.
+- Keep their warrior count too low to safely plot; with no warrior, a plot cannot be placed face down.
+- Time movement so you cross Extortion clearings only on a turn you can immediately attack the plot.
 
 ---
 
 ### Lord of the Hundreds
 ##### Helping:
-- Leaving items available for the hoard.
-- Letting mobs spread without interruption.
-- Fighting them inefficiently and feeding rage.
-- Allowing the Warlord to bully isolated clearings uncontested.
+- Crafting your own items into your Crafted Items box — Looters lets the Hundreds steal one whenever they win a battle they declared as attacker.
+- Letting them stay in one mood too long; their cycling moods reward the patient table.
+- Stacking pieces in the warlord's clearing while they are Wrathful — when they attack you there they deal a bonus hit on top of the roll.
+- Killing only the Warlord; the Warlord re-spawns and the surrounding mob is the real threat.
 
 ##### Hurting:
-- Deny and control craftable items.
-- Kill mobs before they chain damage across the map.
-- Attack the Warlord when it meaningfully slows their turn.
-- Keep them from easily oppressing multiple clearings.
+- Strip items off the table before Birdsong so the hoard skips its score trigger.
+- Liberate oppressed clearings (place any warrior there) to reset their scoring track for that clearing.
+- Spend a turn moving the Warlord pawn off its anchor — without him, mobs cannot Anointed-recruit chain.
+- Keep at least one warrior adjacent to every Stronghold so they cannot freely Befoul.
 
 ---
 
 ### Keepers in Iron
 ##### Helping:
-- Ignoring relic paths.
-- Leaving waystations safe.
-- Letting them build a clean retinue with no disruption.
-- Staying out of their way while they recover and score relics.
+- Leaving the waystation whose face-up type matches a nearby relic alone — that pairing is the recover trigger, not just relic count.
+- Crafting hammers and high-suit items for them — Keepers happily craft in any clearing thanks to Faithful Retainer-style movement.
+- Forgetting that Retinue cards are face-up — they pre-announce plans, so ignoring the spread means ignoring free intel.
+- Letting them resolve a quiet recover; recovered relics jump from clearing to faction board for big VP.
 
 ##### Hurting:
 - Take relics off the map yourself — every relic removed scores 2 VP for the remover.
@@ -157,25 +157,25 @@
 
 ### Lilypad Diaspora
 ##### Helping:
-- Letting frog pieces integrate peacefully everywhere.
-- Ignoring Militant enclaves and the warriors they Rally.
-- Attacking Peaceful enclaves and triggering Fears Come to Pass map-wide.
-- Allowing them to hold many clearings without negotiation.
+- Letting two enclaves sit on river clearings — Frog Dominance just needs 2 river enclaves at start of Birdsong to end the game.
+- Building shared infrastructure in their suited clearings; their building-adjacent enclaves piggyback your work.
+- Forgetting they speak last in negotiations — verbal trades favor whoever can reposition late, and they always can.
+- Letting Integrate go uncontested — they spend one card in Evening and score 1 VP per matching Peaceful enclave, scaling with their footprint.
 
 ##### Hurting:
-- Police their spread early, before enclaves entrench.
+- Police their spread early, before enclaves entrench in suited clusters.
 - Avoid attacking Peaceful enclaves blindly — Fears Come to Pass flips them all to Militant and spawns a warrior at each.
-- Keep their key clearings contested so Integrate scoring stalls.
+- Keep their key clearings contested so Integrate scoring stalls turn after turn.
 - Force them into awkward choices between Peaceful (Integrate scoring) and Militant (Retaliate defense).
 
 ---
 
 ### Twilight Council
 ##### Helping:
-- Letting assemblies stay uncontested.
-- Ignoring assembly placement and Convene Woodfolk setup.
-- Fighting *next to* their Governing assemblies — Oversee scores when an enemy building/token shares the clearing.
-- Allowing them to score while everyone else over-focuses on battles.
+- Letting them stockpile bird cards — Empower turns each into a roll for Loyalists or VP at any assembly they rule.
+- Building or placing tokens in their assembly clearings — every enemy piece sharing the clearing fuels Oversee.
+- Ignoring Convene Woodfolk setup; the more woodfolk-tagged effects pile up, the harder they are to unwind.
+- Entreating freely to slip past Governors — every Entreat lets them place Loyalists at that assembly or bank one for later.
 
 ##### Hurting:
 - Disrupt Governing assemblies before they convert table chaos into Oversee points.
@@ -188,15 +188,15 @@
 ### Knaves of the Deepwood
 ##### Helping:
 - Leaving captains safe in forests and edges.
-- Giving them soft warriors next to forests for Have at Thee Prisoners.
-- Crafting items they can Filch into their Stash.
+- Becoming the Prisoner leader — on Take It Easy you pick where your captured warriors return, but you've fed Mock the Powerful all game.
+- Battling a Captain's clearing without enough hits to kill every Skunk first — surplus hits are wasted because Captains can't be hit until Skunks are gone.
 - Letting them raid without forcing awkward retreats.
 
 ##### Hurting:
 - Predict which Captain is up next — face-up Captains can act, face-down ones are spent until Take It Easy.
 - Avoid leaving soft targets adjacent to forests so Have at Thee starves.
 - Deny Filch fodder — skip crafts that just feed their Stash.
-- Hit Skunks first — Captains can only take hits in battle once no Skunks remain in the clearing.
+- Clear acclaim tokens — Mock the Powerful loses 1 VP per 2 removed, and you choose which forest the forced Run Away Skunk wastes itself in.
 
 ---
 
