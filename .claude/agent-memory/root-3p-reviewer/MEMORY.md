@@ -1,0 +1,5 @@
+- [Guerrilla War probability pitfall](feedback_guerrilla_war_probability.md) — Alliance defender probability math is a common error in community sources; know the correct figures before reviewing.
+- [Eyrie hit ceiling](feedback_eyrie_hit_ceiling.md) — "5 possible hits" for Eyrie requires Commander + Brutal Tactics together; Commander alone = 4 max.
+- [Vagabond Repair vs "healing" terminology](feedback_vagabond_repair_healing_terminology.md) — Sources using "heal/healing" mean Repair/Rest; "caves" means ruins. Heal-rarely advice contradicts the Vagabond profile's pitfalls.
+- [Cult Score ritual misstatement pitfall](feedback_cult_score_ritual_misstatement.md) — Sources often say "score all matching-suit gardens"; correct mechanic is one track-value VP per suit per turn, not per garden.
+- [Revolt no ruling required](feedback_revolt_no_ruling_required.md) — Alliance revolt requires a sympathetic clearing + matching base available, not rule of the clearing. Holding rule does not prevent revolt.

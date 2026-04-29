@@ -1,7 +1,7 @@
 ---
 name: root-rules
 description: Use when adjudicating any Root board game rules question, resolving rules conflicts, or citing rule:X.Y.Z. Wraps rules.yml and faq.yml with schema, navigation, and citation conventions.
-user-invocable: false
+user-invocable: true
 allowed-tools:
   - "Read"
   - "Grep"

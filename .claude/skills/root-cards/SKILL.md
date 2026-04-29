@@ -1,7 +1,7 @@
 ---
 name: root-cards
 description: Use when looking up Root cards, faction abilities, hirelings, vagabonds, landmarks, clockwork bot traits, or anything from the 13 card YAMLs. Indexes the data by faction, expansion, and ID.
-user-invocable: false
+user-invocable: true
 allowed-tools:
   - "Read"
   - "Grep"

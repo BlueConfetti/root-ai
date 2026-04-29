@@ -6,6 +6,8 @@ model: sonnet
 skills:
   - root-rules
   - root-cards
+  - root-factions
+  - root-strategy
 memory: project
 ---
 

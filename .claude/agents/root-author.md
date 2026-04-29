@@ -1,11 +1,13 @@
 ---
 name: root-author
 description: Use when drafting Root content — faction primers, strategy articles, teaching material, post-mortem write-ups. Produces rules-correct prose with citations.
-tools: Read, Grep, Write
+tools: Read, Grep, Write, WebFetch, WebSearch
 model: sonnet
 skills:
   - root-rules
   - root-cards
+  - root-factions
+  - root-strategy
 memory: project
 permissionMode: acceptEdits
 ---

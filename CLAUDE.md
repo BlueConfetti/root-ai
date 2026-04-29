@@ -22,6 +22,8 @@ coaching, content drafting, and pattern-finding synthesis.
   `rules/content/rules/root/en-US/appconfig.yml`
 - **PDF reference** (cross-check only, not consumed by tools):
   `Root_Base_Law_Oct_2025.pdf`
+- **Faction profiles** — 13 in-depth per-faction reference docs at `docs/factions/<slug>.md` (plus `README.md` index). Each profile follows a fixed 12-section spine: At a Glance, Win Condition, Setup, Faction Rules and Abilities, Turn Structure, Scoring Engine, Playbook, Threat Factions, Card Priorities, Common Pitfalls, Mechanic Clarifications, Reference Index. Profiles are derivative — when content conflicts with the Law, the Law wins. Spec: `docs/superpowers/specs/2026-04-28-faction-profiles-design.md`. Slug = citation key where available (`eyrie`, `vagabond`, etc.); display-name slug otherwise (`marquise`, `keepers-iron`).
+- **Curated third-party strategy** — `docs/strategy/sources/<domain>--<title-slug>.md`. **One file per source** (blog, BGG thread, Reddit thread, etc.); a source covering multiple factions writes one file with one `## <Faction Display Name>` H2 per faction discussed plus an optional `## General` section. Frontmatter `factions[]` is the index. Two layers out from the Law: profiles are the project's derivative strategy view, and `docs/strategy/` is *what other people say*. Source roster + schema in `docs/strategy/README.md`. Accuracy/rating fields (`accuracy_rating`, `accuracy_notes`, `last_reviewed`, `reviewed_by`) are populated by a separate review pipeline, not by the curator. Written by `root-strategy-curator` or by hand. Treat as derivative; pass-through, do not promote a source's claim to a `rule:X.Y.Z` cite.
 
 ### Which printing to cite
 
@@ -32,7 +34,27 @@ Default to **p16** for any rules question — it is the current Law and the sour
 
 Rule numbering is **not stable across printings** — `rule:6.2.3` in p4 may correspond to `rule:6.2.2` in p16 (and similar shifts elsewhere). When citing from a non-p16 printing, prefix the citation with the printing tag: `p6:rule:6.2.3` or `p4:rule:5.1.1`. Bare `rule:X.Y.Z` always means p16.
 
-## Agent Roster (when to invoke what)
+## Orchestration: subagents cannot dispatch other subagents
+
+**Claude Code forbids nested subagent dispatch** ([official docs](https://code.claude.com/docs/en/sub-agents)). A subagent that calls the `Agent` tool gets nothing — its dispatches silently fail and it does the work itself, breaking any perceived parallelism.
+
+The supported pattern for parallel orchestration in this project: **put orchestration logic in slash command bodies**, not in subagents. Slash commands run in the **main session**, where the `Agent` tool actually works for parallel dispatch. **Multiple `Agent` calls in a single assistant message run concurrently** — that is the parallelization mechanism.
+
+When designing a new pipeline:
+- **Workers go in `.claude/agents/`** — each agent is a leaf that does one focused job and reports results.
+- **Orchestrators go in `.claude/commands/`** — fat slash commands whose body contains the dispatch logic, manifest management, and synthesis. They run in the main session and can dispatch workers in parallel.
+- A subagent CAN have `Agent(...)` in its `tools:` list, but those dispatches will silently fail at runtime. Do not write subagents that orchestrate.
+
+**Existing fat slash commands in this project:**
+- `/root-analyze` — synthesis orchestrator (decomposes questions, fans out the five layer-2 agents in parallel)
+- `/root-strategy-pipeline` — curation pipeline orchestrator (parallel discovery + parallel extraction in waves of 3, manifest-tracked, resumable)
+- `/root-3p-review` — third-party review pipeline orchestrator (parallel review of curated docs in waves of 3, fills accuracy frontmatter + appends `# Review` sections, manifest-tracked)
+- `/root-cheatsheet` — help/hurt cheatsheet revision orchestrator (per-faction four-phase pipeline `generate -> rules-verify -> pragmatic-vet -> synthesize`; parallel across categories within a faction and waves of 3 factions across scope; backs up the cheatsheet before any wave writes)
+
+**Existing thin slash commands (single-target dispatch — fine to write as a thin wrapper):**
+- `/root-strategy-curate` — single curation target hand-off to `root-strategy-curator`
+
+## Agent Roster (workers — dispatched FROM slash commands, do not orchestrate)
 
 | Agent | Use when… |
 |---|---|
@@ -40,14 +62,27 @@ Rule numbering is **not stable across printings** — `rule:6.2.3` in p4 may cor
 | `root-strategist` | Faction win conditions, matchup analysis, board-state questions |
 | `root-coach` | Post-mortem walking, decision-point analysis (Socratic) |
 | `root-author` | Drafting faction primers, strategy articles, teaching material |
-| `root-analyst` | Complex pattern-finding or original strategy synthesis (orchestrator: dispatches the four above in parallel) |
-
-`/root-analyze <question>` is a thin convenience command that dispatches to `root-analyst`.
+| `root-pragmatist` | Validating strategy claims for actionability + counterfactual correctness; categorizes claims into KEEP / MOVE_TO_AWARENESS / DROP / FLAG |
+| `root-strategy-curator` | Fetches and distills one third-party Root strategy source per invocation. Used by `/root-strategy-curate` (single) and `/root-strategy-pipeline` (parallel waves). Content pipeline, not strategist. |
+| `root-3p-reviewer` | Reviews one curated third-party file claim-by-claim against the Law and faction profiles. Fills frontmatter accuracy fields and appends/replaces a `# Review` section. Used by `/root-3p-review` (parallel waves). Owns only accuracy frontmatter + Review section; never modifies curator-owned content. |
 
 ## Skills
 
+**Domain lenses** (auto-preloaded into the analyst pipeline):
+
 - `root-rules` — lens onto `rules.yml` and `faq.yml`. Auto-preloaded into all layer-2 agents.
 - `root-cards` — unified index across the 13 card YAMLs. Auto-preloaded into all layer-2 agents.
+- `root-factions` — lens onto the 13 faction profile docs at `docs/factions/` (project-derivative strategy view, layer 2). Auto-preloaded into `root-strategist`, `root-coach`, `root-author`, `root-pragmatist`. Not preloaded into `root-referee` (rules adjudication uses primary sources only).
+- `root-strategy` — lens onto curated third-party content at `docs/strategy/sources/` (layer 3 — *what other people say*, rated 0–10 by `/root-3p-review`). Auto-preloaded into `root-strategist`, `root-coach`, `root-author`, `root-pragmatist`. Not preloaded into `root-referee` (same exclusion as `root-factions`). Use **after** consulting `root-factions`; the corpus is supplementary, not authoritative.
+
+**Strategy curation pipeline** (preloaded into `root-strategy-curator`; the four non-internal ones are also user-invocable as standalone slash commands):
+
+- `strategy-source-roster` — lens onto `docs/strategy/README.md` (curated third-party source list, fetch-method dispatch, quality tiers).
+- `strategy-fetch-blog` — generic WebFetch-based fetcher for blogs and articles.
+- `strategy-fetch-reddit` — Bash + Python fetcher hitting Reddit's public JSON endpoint (Reddit blocks both WebFetch *and* Chrome MCP, but the JSON endpoint is shell-reachable). Bundles `scripts/extract-thread.py`.
+- `strategy-fetch-bgg` — Bash + Python fetcher hitting BGG's private SPA-backing JSON endpoint (`api.geekdo.com/api/article`) with browser-style Origin/Referer headers. Paginates every page; resolves author user IDs to display names. Bundles `scripts/extract-thread.py`. No Chrome required.
+- `strategy-discover` — WebSearch-based source discovery; returns a ranked candidate list for user approval before fetching.
+- `strategy-distill` — internal output schema for distilled files written under `docs/strategy/sources/`. Not user-invocable.
 
 ## Citation Conventions
 
